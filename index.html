@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência Criativa Web</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <nav class="main-nav" id="main-nav">
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <a href="#home" class="nav-btn">Home</a>
+        <a href="#sobre" class="nav-btn">Sobre Nós</a>
+        <a href="#servicos" class="nav-btn">Serviços</a>
+        <a href="#depoimentos" class="nav-btn">Depoimentos</a>
+        <a href="#contato" class="nav-btn">Contato</a>
+    </nav>
+    </header>
+    <main>
+        <section id="home" class="banner">
+            <img src="BANNER.png" alt="Banner Agência Criativa" class="banner-img" style="max-width:100%;height:auto;display:block;margin:0 auto 1.5rem auto;">
+            <h1>Home</h1>
+            <p>Transformamos ideias em experiências inesquecíveis. Combinamos criatividade, estratégia e tecnologia para levar a sua marca mais longe.<br>
+✨ O nosso diferencial? Soluções personalizadas, atendimento próximo e resultados reais.</p>
+        </section>
+        <section id="sobre" class="sobre">
+            <h1>Sobre nós</h1>
+            <p>Somos uma agência apaixonada por inovação, design e conexão entre marcas e pessoas. Desde o início, acreditamos que cada projeto é uma oportunidade de fazer algo único.</p>
+            <ul>
+                <li><strong>Nossos Valores:</strong></li>
+                <li>Criatividade com propósito</li>
+                <li>Compromisso com resultados</li>
+                <li>Comunicação transparente</li>
+                <li>Inovação contínua</li>
+                <li>Respeito e parceria com cada cliente</li>
+            </ul>
+        </section>
+        <section id="servicos" class="servicos">
+            <h1>Serviços</h1>
+            <ul>
+                <li>Design Gráfico</li>
+                <li>Desenvolvimento Web</li>
+                <li>Marketing Digital</li>
+                <li>Consultoria Estratégica</li>
+                <li>Produção de Conteúdo</li>
+            </ul>
+        </section>
+        <section id="depoimentos" class="depoimentos">
+            <h1>Depoimentos (fictícios)</h1>
+            <ul>
+                <li>"A Agência Criativa transformou nossa presença online! O site ficou incrível e os resultados foram além do esperado." - Marcos</li>
+                <li>"A equipe é super atenciosa e criativa. Eles realmente entendem as necessidades do cliente." - Joana</li>
+                <li>"Recomendo a todos! Profissionais competentes e resultados visíveis." - Carlos</li>
+            </ul>
+        </section>
+        <!-- Contato info removido para evitar duplicidade -->
+            <section id="contato" class="contato">
+                <h2>Contato</h2>
+                <form class="form-contato">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
+                    <button type="submit">Enviar mensagem</button>
+                </form>
+            </section>
+    </main>
+    
+</body>
+<script>
+  // Menu responsivo
+  const menuToggle = document.getElementById('menu-toggle');
+  const mainNav = document.getElementById('main-nav');
+  menuToggle.addEventListener('click', () => {
+    mainNav.classList.toggle('responsive');
+  });
+</script>
+</html>

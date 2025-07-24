@@ -1,0 +1,301 @@
+/* Caixinhas laranja claro para os serviços */
+.servicos ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 0;
+  list-style: none;
+  justify-content: flex-start;
+}
+.servicos ul li {
+  background: #f8f9fa;
+  color: #22223b;
+  border-radius: 1.5rem;
+  padding: 0.7em 1.2em;
+  text-align: center;
+  font-weight: 600;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-size: 1em;
+  letter-spacing: 0.04em;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  margin: 0.2em 0.05em;
+  white-space: nowrap;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.servicos ul li:hover, .servicos ul li:focus {
+  background: #e0e0e0;
+  color: #22223b;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+@media (max-width: 700px) {
+  .servicos ul {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .servicos ul li {
+    width: 100%;
+    font-size: 1em;
+    white-space: normal;
+    padding: 0.7em 1.1em;
+    margin: 0.2em 0.2em;
+  }
+}
+/* Centralizar o formulário de contato e empilhar campos */
+.contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.1em;
+  max-width: 400px;
+  width: 100%;
+  margin: 2.5rem auto 2rem auto;
+}
+.form-contato label,
+.form-contato input,
+.form-contato textarea,
+.form-contato button {
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  text-align: left;
+}
+.form-contato button {
+  text-align: center;
+}
+.servicos ul {
+  white-space: nowrap;
+}
+/* Forçar alinhamento à esquerda para h1 */
+  font-weight: 500;
+  margin-bottom: 0.2em;
+}
+.form-contato input {
+  padding: 0.7em 1em;
+  border: 1.5px solid #e0c9a6;
+  border-radius: 0.7em;
+  font-size: 1em;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  background: #fff8f0;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+}
+.form-contato textarea {
+  padding: 0.9em 1em;
+  border: 1.5px solid #e0c9a6;
+  border-radius: 0.7em;
+  font-size: 1em;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  background: #fff8f0;
+  min-height: 120px;
+  max-width: 100%;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+  resize: vertical;
+}
+.form-contato button {
+  background: #ffd9b3;
+  color: #b85c00;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.7em 1.5em;
+  font-size: 1em;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  margin-top: 0.5em;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.form-contato button:hover {
+  background: #ffb366;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(184,92,0,0.10);
+}
+/* Navegação com botões */
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2vw; /* Botões mais próximos */
+  margin: 1.2rem 0 1.5rem 0;
+  flex-wrap: nowrap; /* Não quebra linha em telas grandes */
+  font-size: 1.5rem;
+  font-family: 'Balqis', cursive;
+  background: linear-gradient(90deg, #bfae99 0%, #a8977b 100%);
+  padding: 0.5rem 0;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+/* Serviços com CSS Grid */
+.servicos ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  padding: 0;
+  list-style: none;
+  overflow-x: auto;
+}
+.servicos ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 14px;
+  padding: 0;
+  list-style: none;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  margin: 0.2em 0.05em;
+  white-space: nowrap;
+}
+@media (max-width: 700px) {
+  .servicos ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 14px;
+  padding: 0;
+  list-style: none;
+  white-space: normal;
+    padding: 0.7em 1.1em;
+    margin: 0.2em 0.2em;
+  }
+}
+.nav-btn {
+  background: #ffd9b3;
+  color: #b85c00;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.5em 1.3em; /* Menos padding para botões mais próximos */
+  font-size: 1em;
+  font-family: 'Balqis', cursive;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  outline: none;
+  margin: 0.4em 0.5em; /* Menos margem para botões mais próximos */
+  letter-spacing: 0.04em;
+}
+.nav-btn:hover, .nav-btn:focus {
+  background: none;
+  box-shadow: none;
+  margin: 0.2em 0.05em;
+  padding: 0;
+  cursor: pointer;
+  margin-left: 1vw;
+.servico-btn {
+  background: #ffd9b3;
+  color: #b85c00;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.7em 1.2em;
+  text-align: center;
+  font-weight: 600;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-size: 1em;
+  letter-spacing: 0.04em;
+  box-shadow: 0 1px 4px rgba(184,92,0,0.04);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  margin: 0;
+  white-space: nowrap;
+}
+.servico-btn:hover, .servico-btn:focus {
+  background: #ffb366;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(184,92,0,0.10);
+}
+}
+.menu-toggle span {
+  display: block;
+  width: 2rem;
+  height: 0.3rem;
+  background: #007BFF;
+  margin: 0.3rem 0;
+  border-radius: 0.2rem;
+  transition: 0.3s;
+}
+
+@media (max-width: 700px) {
+  .main-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    margin: 1.2rem 0 1.5rem 0;
+    position: relative;
+    flex-wrap: wrap; /* Permite empilhar no mobile */
+  }
+  .nav-btn {
+    width: 100vw;
+    border-radius: 0;
+    text-align: left;
+    padding: 1.2em 1.5em;
+    font-size: 1.1em;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .menu-toggle {
+    display: flex;
+    position: absolute;
+    top: 0.2rem;
+    right: 1vw;
+    z-index: 20;
+  }
+  .main-nav.responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+  .main-nav:not(.responsive) .nav-btn {
+    display: none;
+  }
+  .main-nav.responsive .nav-btn {
+    display: block;
+  }
+}
+/* Banner centralizado e menor */
+.banner-img {
+  display: block;
+  margin: 30px auto 20px auto;
+  max-width: 600px;
+  width: 90vw;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  background: linear-gradient(135deg, #f5ecd7 0%, #f3e6c9 100%);
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  color: #22223b;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #007BFF;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+nav {
+  background-color: #f8f9fa;
+  padding: 10px;
+  text-align: center;
+}
