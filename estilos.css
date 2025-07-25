@@ -1,5 +1,68 @@
-/* Caixinhas laranja claro para os serviços */
-.servicos ul {
+/* BEM: Blocos, Elementos e Modificadores */
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2vw;
+  margin: 1.2rem 0 1.5rem 0;
+  flex-wrap: nowrap;
+  font-size: 1.5rem;
+  font-family: 'Balqis', cursive;
+  background: linear-gradient(90deg, #bfae99 0%, #a8977b 100%);
+  padding: 0.5rem 0;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.main-nav__btn {
+  background: #ffd9b3;
+  color: #b85c00;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.5em 1.3em;
+  font-size: 1em;
+  font-family: 'Balqis', cursive;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  outline: none;
+  margin: 0.4em 0.5em;
+  letter-spacing: 0.04em;
+}
+.main-nav__btn:hover, .main-nav__btn:focus {
+  background: #ffb366;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(184,92,0,0.10);
+}
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  margin-left: 1vw;
+}
+.menu-toggle__bar {
+  display: block;
+  width: 2rem;
+  height: 0.3rem;
+  background: #007BFF;
+  margin: 0.3rem 0;
+  border-radius: 0.2rem;
+  transition: 0.3s;
+}
+.servicos {
+  margin: 2rem 0;
+}
+.servicos__titulo {
+  font-size: 2rem;
+  font-family: 'Balqis', cursive;
+  margin-bottom: 1.2rem;
+}
+.servicos__lista {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
@@ -7,7 +70,7 @@
   list-style: none;
   justify-content: flex-start;
 }
-.servicos ul li {
+.servicos__item {
   background: #f8f9fa;
   color: #22223b;
   border-radius: 1.5rem;
@@ -22,17 +85,129 @@
   white-space: nowrap;
   transition: background 0.2s, color 0.2s, box-shadow 0.2s;
 }
-.servicos ul li:hover, .servicos ul li:focus {
+.servicos__item:hover, .servicos__item:focus {
   background: #e0e0e0;
   color: #22223b;
   box-shadow: 0 2px 8px rgba(0,0,0,0.10);
 }
+.contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contato__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.1em;
+  max-width: 400px;
+  width: 100%;
+  margin: 2.5rem auto 2rem auto;
+}
+.contato__label,
+.contato__input,
+.contato__textarea,
+.contato__button {
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  text-align: left;
+}
+.contato__button {
+  text-align: center;
+  background: #ffd9b3;
+  color: #b85c00;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.7em 1.5em;
+  font-size: 1em;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  margin-top: 0.5em;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.contato__button:hover {
+  background: #ffb366;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(184,92,0,0.10);
+}
+.banner {
+  text-align: center;
+}
+.banner__img {
+  display: block;
+  margin: 30px auto 20px auto;
+  max-width: 600px;
+  width: 90vw;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+body {
+  background: linear-gradient(135deg, #f5ecd7 0%, #f3e6c9 100%);
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  color: #22223b;
+  min-height: 100vh;
+}
+header {
+  background-color: #007BFF;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+.main-nav {
+  background-color: #f8f9fa;
+  padding: 10px;
+  text-align: center;
+}
 @media (max-width: 700px) {
-  .servicos ul {
+  .main-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    margin: 1.2rem 0 1.5rem 0;
+    position: relative;
+    flex-wrap: wrap;
+  }
+  .main-nav__btn {
+    width: 100vw;
+    border-radius: 0;
+    text-align: left;
+    padding: 1.2em 1.5em;
+    font-size: 1.1em;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .menu-toggle {
+    display: flex;
+    position: absolute;
+    top: 0.2rem;
+    right: 1vw;
+    z-index: 20;
+  }
+  .main-nav.responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+  .main-nav:not(.responsive) .main-nav__btn {
+    display: none;
+  }
+  .main-nav.responsive .main-nav__btn {
+    display: block;
+  }
+  .servicos__lista {
     flex-direction: column;
     gap: 12px;
   }
-  .servicos ul li {
+  .servicos__item {
     width: 100%;
     font-size: 1em;
     white-space: normal;

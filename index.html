@@ -9,20 +9,20 @@
 <body>
     <nav class="main-nav" id="main-nav">
         <div class="menu-toggle" id="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
         </div>
-        <a href="#home" class="nav-btn">Home</a>
-        <a href="#sobre" class="nav-btn">Sobre Nós</a>
-        <a href="#servicos" class="nav-btn">Serviços</a>
-        <a href="#depoimentos" class="nav-btn">Depoimentos</a>
-        <a href="#contato" class="nav-btn">Contato</a>
+        <a href="#home" class="main-nav__btn">Home</a>
+        <a href="#sobre" class="main-nav__btn">Sobre Nós</a>
+        <a href="#servicos" class="main-nav__btn">Serviços</a>
+        <a href="#depoimentos" class="main-nav__btn">Depoimentos</a>
+        <a href="#contato" class="main-nav__btn">Contato</a>
     </nav>
     </header>
     <main>
         <section id="home" class="banner">
-            <img src="BANNER.png" alt="Banner Agência Criativa" class="banner-img" style="max-width:100%;height:auto;display:block;margin:0 auto 1.5rem auto;">
+            <img src="BANNER.png" alt="Banner Agência Criativa" class="banner__img" style="max-width:100%;height:auto;display:block;margin:0 auto 1.5rem auto;">
             <h1>Home</h1>
             <p>Transformamos ideias em experiências inesquecíveis. Combinamos criatividade, estratégia e tecnologia para levar a sua marca mais longe.<br>
 ✨ O nosso diferencial? Soluções personalizadas, atendimento próximo e resultados reais.</p>
@@ -40,13 +40,13 @@
             </ul>
         </section>
         <section id="servicos" class="servicos">
-            <h1>Serviços</h1>
-            <ul>
-                <li>Design Gráfico</li>
-                <li>Desenvolvimento Web</li>
-                <li>Marketing Digital</li>
-                <li>Consultoria Estratégica</li>
-                <li>Produção de Conteúdo</li>
+            <h1 class="servicos__titulo">Serviços</h1>
+            <ul class="servicos__lista">
+                <li class="servicos__item">Design Gráfico</li>
+                <li class="servicos__item">Desenvolvimento Web</li>
+                <li class="servicos__item">Marketing Digital</li>
+                <li class="servicos__item">Consultoria Estratégica</li>
+                <li class="servicos__item">Produção de Conteúdo</li>
             </ul>
         </section>
         <section id="depoimentos" class="depoimentos">
@@ -60,14 +60,14 @@
         <!-- Contato info removido para evitar duplicidade -->
             <section id="contato" class="contato">
                 <h2>Contato</h2>
-                <form class="form-contato">
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome" required>
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="mensagem">Mensagem</label>
-                    <textarea id="mensagem" name="mensagem" required></textarea>
-                    <button type="submit">Enviar mensagem</button>
+                <form class="contato__form">
+                    <label for="nome" class="contato__label">Nome</label>
+                    <input type="text" id="nome" name="nome" required class="contato__input">
+                    <label for="email" class="contato__label">E-mail</label>
+                    <input type="email" id="email" name="email" required class="contato__input">
+                    <label for="mensagem" class="contato__label">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" required class="contato__textarea"></textarea>
+                    <button type="submit" class="contato__button">Enviar mensagem</button>
                 </form>
             </section>
     </main>
